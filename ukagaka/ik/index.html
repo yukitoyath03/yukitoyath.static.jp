@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 文字コードはUTF-8にしてください -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta property="og:title" content="「レミ一座」をWeb上で動かす">
+	<meta property="og:description" content="伺かスキン「レミ一座」をWeb上で動かす">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://yukitoyath.static.jp/ukagaka/ik/">
+	<meta property="og:image" content="https://yukitoyath.static.jp/ukagaka/thumbnail/remi_ghost_ogp.jpg">
+	<meta property="og:locale" content="ja_JP">
+	<meta name="twitter:card" content="summary_large_image">
+    <title>「レミ一座」をWeb上で動かす</title>
+	<link type="text/css" rel="stylesheet" href="../../parts/ikgk.css">
+    <!-- BEGIN イカガカ用の設定 -->
+    <link rel="stylesheet" href="./css/ikagaka.css">
+    <script src="./vendor/js/es6-shim.js"></script>
+    <script src="./vendor/js/bluebird.js"></script>
+    <script src="./vendor/js/encoding.js"></script>
+    <script src="./vendor/js/browserfs.js"></script>
+    <script src="./vendor/js/shiorijk.js"></script>
+    <script src="./vendor/js/jszip.js"></script>
+    <script src="./vendor/js/eventemitter2.js"></script>
+    <script src="./vendor/js/NarLoader.js"></script>
+    <script src="./vendor/js/NanikaStorage.js"></script>
+    <script src="./vendor/js/NanikaStorage.backend.FS.js"></script>
+    <script src="./vendor/js/cuttlebone.js"></script>
+    <script src="./vendor/js/SakuraScriptPlayer.js"></script>
+    <script src="./vendor/js/ShioriLoader.js"></script>
+    <script src="./vendor/js/shioridetector-common_names.js"></script>
+    <script src="./vendor/js/WorkerClient.js"></script>
+    <script src="./vendor/js/URLWorkerClient.js"></script>
+    <script src="./vendor/js/NativeShioriWorkerClient.js"></script>
+    <script src="./vendor/js/kawariworker.js"></script>
+    <script src="./vendor/js/kawari7worker.js"></script>
+    <script src="./vendor/js/satoriworker.js"></script>
+    <script src="./vendor/js/yayaworker.js"></script>
+    <script src="./vendor/js/aya5worker.js"></script>
+    <script src="./vendor/js/NanikaDefaultEventDefinition.js"></script>
+    <script src="./vendor/js/ua-parser.js"></script>
+    <script src="./vendor/js/useragent_parser.js"></script>
+    <script src="./vendor/js/NanikaDefaultPlugin.js"></script>
+    <script src="./vendor/js/Nanika.js"></script>
+    <script src="./vendor/js/NanikaManager.js"></script>
+    <script src="./js/ikagakaConfig.js"></script>
+    <script src="./js/demo.js"></script>
+    <!-- END イカガカ用の設定 -->
+  </head>
+  <body>
+	<div id="container">
+		<header><h1>「レミ一座」をWeb上で動かす</h1></header>
+		<main><!-- 例: 以下のidが付いたボタンを配置すれば、イカガカの起動終了とデータ消去を制御できます。 -->
+		<section id="except_sp">
+			<h2>最終更新</h2>
+				<p>2026.7.8 Ver</p>
+			<h2>紹介</h2>
+				<p>ゴースト概要は<a href="https://cherry.narnaloader.ukagaka.net/ghost.php?ghost=remi_troupe">ななろだのダウンロードページ</a>を読んでください。ななろだにもデモはありますが、こちらに上げているものはイカガカでのユーザ名記憶に対応しています（※差替え忘れがなければ）
+				コミュニケーションボックスは彼らの名前を呼んだり、好物をあげたり、特技について言及すると喜ぶかもしれません。また、「家なき子」の完訳を読んでるとより楽しめます。</p>
+			<h2>イカガカで動かす</h2>
+				<button id="ikagaka_boot">レミとマチアを起こす</button>
+				<button id="ikagaka_halt">レミとマチアを休ませる</button>
+				<button id="ikagaka_clean">初期化する</button>
+			<h2>その他</h2>
+				<ul>
+					<li><a href="https://cherry.narnaloader.ukagaka.net/ghost.php?ghost=remi_troupe">SSP版をダウンロードする</a></li>
+				</ul>
+		</section>
+		<section id="for_sp">
+		<h2>スマホから閲覧している方へ</h2>
+			<p>パソコンからアクセスをお願いします。</p>
+			<input type="text" value="https://yukitoyath.static.jp/ukagaka/ik/" readonly>
+		</section>
+		</main>
+		<footer>&copy; <a href="/">t0-ma</a> <img src="../../parts/mail.png"><br>Powered by <a href="https://github.com/Ikagaka/Ikagaka.demo">Ikagaka.demo</a><span class="brbr"></span>balloon:<a href="https://khmix.sakura.ne.jp/">K.Hみっくす</a></footer>
+		</div>
+	</body>
+</html>
